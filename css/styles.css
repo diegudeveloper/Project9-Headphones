@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+header .container_all {
+  width: 100%;
+  height: auto;
+}
+header .container_all .container_menu {
+  width: 100%;
+  height: 10vh;
+}
+header .container_all .container_menu input {
+  display: none;
+}
+header .container_all .container_menu label .icon {
+  padding: 15px;
+}
+header .container_all .container_menu .menu {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  transform: translateY(-150%);
+  transition: all 1s ease-in-out;
+}
+header .container_all .container_menu .menu ul {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+header .container_all .container_menu .menu .iten_logo {
+  flex: 80;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+header .container_all .container_menu .menu .iten {
+  flex: 20;
+  list-style: none;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+header .container_all .container_menu .menu .iten.iten:nth-child(3) {
+  border-bottom: none;
+}
+header .container_all .container_menu .menu a {
+  width: 100%;
+  text-decoration: none;
+  color: #fdfbfb;
+}
+header .container_all .container_menu #btn-menu:checked ~ .menu {
+  transform: translateY(0);
+}
+header .container_main {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container_main .text_main {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .container_main .text_main .maintext {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+header .container_main .text_main .secondtext {
+  text-align: center;
+  text-transform: unset;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+}
+header .container_main .text_main .btn {
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: auto;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+}
+header .container_main .text_main .btn a {
+  text-decoration: none;
+  color: #000;
+}
+header .container_main .img_main {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .container_main .img_main img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
