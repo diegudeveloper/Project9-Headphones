@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    .container_all {
+        width: 100%;
+        height: auto;
+        .container_menu {
+            @include margen;
+            height: 10vh;
+            input {
+                display: none;
+            }
+            label {
+                @media screen and (min-width: 768px) {
+                    display: none;
+                } 
+            }
+                .icon {
+                    padding: 15px;
+                }
+            .menu {
+                width: 100%;
+                height: auto;
+                background-image: linear-gradient(to right, #434343 0%, black 100%);
+                transform: translateY(-150%);
+                transition: all 1s ease-in-out;
+
+                @media screen and (min-width: 768px) {
+                    transform: translateY(0);
+                    background-image: none
+                }
+
+                ul {
+                    @include margen;
+                    display: flex;
+                    flex-direction: column;
+
+                    @media screen and (min-width: 768px) {
+                        flex-direction: row;
+                        @include margen;
+                    }
+                    @media screen and (min-width: 1024px) {
+                        width: 100%;
+                    }
+                    @media screen and (min-width: 1440px) {
+                        width: 100%;
+                    }
+                }
+                .iten_logo {
+                    flex: 80;
+                    list-style: none;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #fff;
+                    cursor: pointer;
+                    @media screen and (min-width: 1024px) {
+                        font-size: 24px;
+                        font-weight: bold;                        
+                    }
+                }
+                .iten {
+                    flex: 20;
+                    list-style: none;
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                    border-bottom: 1px solid #fff;
+                    &.iten:nth-child(3) {
+                        border-bottom: none;
+                    }
+                    @media screen and (min-width: 1024px) {
+                        text-align: center;
+                    }
+                }
+                a {
+                    width: 100%;
+                    text-decoration: none;
+                    color: #fdfbfb;
+                    cursor: pointer;
+
+                    @media screen and (min-width: 768px) {
+                        color: #000;
+                    }
+                }
+            }
+            #btn-menu:checked ~ .menu {
+                transform: translateY(0);
+            }
+            @media screen and (min-width: 1440px) {
+                @include margen;
+            }
+        }
+    }
+    .container_main {
+        @include margen;
+        display: flex;
+        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        align-items: center;
+        .text_main {
+            width: 100%;
+            .maintext {
+                @include text1;
+                margin-bottom: 20px;
+                @media screen and (min-width: 1024px) {
+                    text-align: left;
+                    line-height: 75px;
+                    font-size: 48px;
+
+                    br {
+                        display: block;
+                    }
+                    .apart {
+                        display: none;
+                    }
+                }
+            }
+            br {
+                display: none;
+            }
+            .break {
+                display: block;
+            }
+            .secondtext {
+                @include text2;
+                font-size: $fontsmall;
+                .separate {
+                    display: none;
+                    @media screen and (min-width:768px) {
+                        display: block;
+                    }
+                }
+                @media screen and (min-width: 768px) {
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-weight: 300;
+                }
+                @media screen and (min-width: 1024px) {
+                    width: 100%;
+                    text-align: left;
+                    line-height: 25px;
+                }
+                @media screen and (min-width: 1440px) {
+                    width: 80%;
+                    margin: 0;
+                }
+            }
+            .btn {
+                width: 125px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                height: auto;
+                padding: 15px 20px;
+                border-radius: 30px;
+                background-color: #000;
+                @media screen and (min-width: 1024px) {
+                    margin: 0;
+                    margin-top: 25px;
+                    border: none;
+                }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+            @media screen and (min-width: 1024px) {
+                width: 48%;
+            }
+        }
+        .img_main {
+            width: 100%;
+            @media screen and (min-width: 768px) {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            @media screen and (min-width: 1024px) {
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                @media screen and (min-width: 768px) {
+                    width: 60%;
+                }
+                @media screen and (min-width: 1024px) {
+                    width: 90%;
+                }
+                @media screen and (min-width: 1440px) {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
