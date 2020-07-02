@@ -107,21 +107,28 @@ header {
             .maintext {
                 @include text1;
                 margin-bottom: 20px;
+                @media screen and (min-width: 768px) {
+                    br {
+                        display: none
+                    }
+                    .break {
+                        display: block;
+                    }
+                }
                 @media screen and (min-width: 1024px) {
                     text-align: left;
                     line-height: 75px;
                     font-size: 48px;
-
                     br {
                         display: block;
                     }
                     .apart {
+                        display: block;
+                    }
+                    .break {
                         display: none;
                     }
                 }
-            }
-            br {
-                display: none;
             }
             .break {
                 display: block;
@@ -197,7 +204,7 @@ header {
                     width: 60%;
                 }
                 @media screen and (min-width: 1024px) {
-                    width: 90%;
+                    width: 80%;
                 }
                 @media screen and (min-width: 1440px) {
                     width: 80%;

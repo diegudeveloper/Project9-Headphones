@@ -139,6 +139,14 @@ header .container_main .text_main .maintext {
   text-transform: capitalize;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  header .container_main .text_main .maintext br {
+    display: none;
+  }
+  header .container_main .text_main .maintext .break {
+    display: block;
+  }
+}
 @media screen and (min-width: 1024px) {
   header .container_main .text_main .maintext {
     text-align: left;
@@ -149,11 +157,11 @@ header .container_main .text_main .maintext {
     display: block;
   }
   header .container_main .text_main .maintext .apart {
+    display: block;
+  }
+  header .container_main .text_main .maintext .break {
     display: none;
   }
-}
-header .container_main .text_main br {
-  display: none;
 }
 header .container_main .text_main .break {
   display: block;
@@ -253,7 +261,7 @@ header .container_main .img_main img {
 }
 @media screen and (min-width: 1024px) {
   header .container_main .img_main img {
-    width: 90%;
+    width: 80%;
   }
 }
 @media screen and (min-width: 1440px) {
