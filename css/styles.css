@@ -139,6 +139,9 @@ header .container_main .text_main .maintext {
   text-transform: capitalize;
   margin-bottom: 20px;
 }
+header .container_main .text_main .maintext .apart {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   header .container_main .text_main .maintext br {
     display: none;
@@ -268,4 +271,95 @@ header .container_main .img_main img {
   header .container_main .img_main img {
     width: 80%;
   }
+}
+
+.about {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  background-image: url(/img/Galery/headphones-690685_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .container {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about .container .text1 {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .about .container .text1 {
+    font-size: 26px;
+  }
+}
+.about .container .text2 {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .about .container .text2 {
+    width: 50%;
+    line-height: 40px;
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about .container .text2 {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about .container .text2 {
+    width: 25%;
+  }
+}
+.about .container .text3 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  color: #fff;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .about .container .text3 {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about .container .text3 {
+    width: 70%;
+    line-height: 20px;
+  }
+}
+.about .container .text3 .tex {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .about .container .text3 .tex {
+    display: block;
+  }
+}
+
+.galery {
+  width: 100%;
+  height: auto;
+}
+.galery .container_galery {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }

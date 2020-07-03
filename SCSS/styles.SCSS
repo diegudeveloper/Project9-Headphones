@@ -2,3 +2,13 @@
 @import "components/mixins";
 @import "components/mainmenu";
 @import "components/hero";
+@import "components/about";
+
+
+.galery {
+    width: 100%;
+    height: auto;
+    .container_galery {
+        @include margen;
+    }
+}

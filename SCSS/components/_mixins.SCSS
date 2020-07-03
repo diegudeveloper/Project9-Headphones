@@ -17,3 +17,29 @@
     font-weight: 300;
     letter-spacing: 1.5px;
 }
+
+@mixin  t1 {
+    width: 100%;
+    color: $color_1;
+    text-align: center;
+    padding-top: 60px;
+}
+
+@mixin  t2 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    color: $color_1;
+    text-align: center;
+}
+
+@mixin  t3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    color: $color_1;
+    text-align: center;
+}
