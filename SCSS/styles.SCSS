@@ -9,6 +9,36 @@
     width: 100%;
     height: auto;
     .container_galery {
-        @include margen;
+        //@include margen;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .box {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            .main {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+            .p1, .p2, .p3 {
+                width: 100%;
+                .im1, .im2, .im3 {
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+            .up {
+                width: 100%;
+                .up1, .up2 {
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        
     }
 }

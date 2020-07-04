@@ -280,7 +280,9 @@ header .container_main .img_main img {
   background-image: url(../img/Galery/headphones-690685_1920.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 .about .container {
   width: 90%;
@@ -358,8 +360,33 @@ header .container_main .img_main img {
   height: auto;
 }
 .galery .container_galery {
-  width: 90%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.galery .container_galery .box {
+  width: 100%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  overflow: hidden;
+}
+.galery .container_galery .box .main {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.galery .container_galery .box .p1, .galery .container_galery .box .p2, .galery .container_galery .box .p3 {
+  width: 100%;
+}
+.galery .container_galery .box .p1 .im1, .galery .container_galery .box .p1 .im2, .galery .container_galery .box .p1 .im3, .galery .container_galery .box .p2 .im1, .galery .container_galery .box .p2 .im2, .galery .container_galery .box .p2 .im3, .galery .container_galery .box .p3 .im1, .galery .container_galery .box .p3 .im2, .galery .container_galery .box .p3 .im3 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.galery .container_galery .box .up {
+  width: 100%;
+}
+.galery .container_galery .box .up .up1, .galery .container_galery .box .up .up2 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
