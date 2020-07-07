@@ -9,38 +9,60 @@
     width: 100%;
     height: auto;
     .container_galery {
-        //@include margen;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        @media screen and (min-width: 1024px) {
+            height: 450px;
+        }
         .box {
             width: 100%;
-            height: auto;
+            height: 450px;
             overflow: hidden;
             @media screen and (min-width: 768px) {
                 &:nth-child(1) {
                     flex: 30;
+                    @media screen and (min-width: 1024px) {
+                        height: 450px;
+                    }
                 }
                 &:nth-child(2) {
-                    flex: 50;
+                    flex: 40;
                     display: flex;
                     flex-wrap: wrap;
+                    @media screen and (min-width: 1024px) {
+                        height: 450px;
+                    }
                     .p1 {
                         width: 100%;
                         height: auto;
+                        overflow: hidden;
                         .im1 {
                             width: 100%;
                             max-width: 100%;
-                            height: auto
+                            height: auto;
+                            @media screen and (min-width: 1024px) {
+                                height: 175px;
+                                object-fit: cover;
+                            }
+                        }
+                        @media screen and (min-width: 1024px) {
+                            height: 175px;
                         }
                     }
                     .p2 {
                         width: 50%;
+                        max-width: 100%;
                         height: auto;
+                        object-fit: cover;
                         .im2 {
                             width: 100%;
                             max-width: 100%;
                             height: auto;
+                            @media screen and (min-width: 1024px) {
+                                height: 175px;
+                                object-fit: cover;
+                            }
                         }
                     }
                     .p3 {
@@ -54,7 +76,10 @@
                     }
                 }
                 &:nth-child(3) {
-                    flex: 20;
+                    flex: 30;
+                    @media screen and (min-width: 1024px) {
+                        height: 450px;
+                    }
                 }
             }
             .main {
@@ -81,6 +106,9 @@
                     max-width: 100%;
                     height: auto;
                 }
+            }
+            @media screen and (min-width: 1024px) {
+                height: 350px;
             }
         }
         
