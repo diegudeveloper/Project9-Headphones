@@ -548,3 +548,51 @@ header .container_main .img_main img {
   height: 100%;
   object-fit: cover;
 }
+
+.contact {
+  width: 100%;
+  height: auto;
+  background-color: #444444;
+}
+.contact .container_contact {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact .container_contact .conta_box {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+.contact .container_contact .conta_box:nth-child(1) {
+  font-size: 36px;
+  text-align: center;
+  padding-top: 50px;
+}
+.contact .container_contact .conta_box:nth-child(4) {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 10px;
+}
+.contact .container_contact .box2, .contact .container_contact .box3 {
+  display: none;
+}
+.contact .container_contact .box4 {
+  width: 100%;
+}
+.contact .container_contact .box4 .input {
+  display: block;
+  width: 70%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 18px;
+}
