@@ -549,6 +549,31 @@ header .container_main .img_main img {
   object-fit: cover;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer .footer {
+  width: 100%;
+  height: auto;
+  padding: 15px 10px;
+  background-color: #000;
+}
+
+footer .footer h2 {
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+footer .footer span {
+  color: #f7e811;
+  font-size: 16px;
+}
+
 .contact {
   width: 100%;
   height: auto;
@@ -618,10 +643,11 @@ header .container_main .img_main img {
 .contact .container_contact .box4 .input {
   display: block;
   width: 70%;
-  height: 31px;
-  margin-top: 20px;
+  height: 35px;
+  margin-top: 18px;
   margin-bottom: 20px;
   border-radius: 30px 0 0 30px;
+  border: 0;
   text-align: center;
   font-size: 18px;
   background-color: #333;
@@ -636,9 +662,9 @@ header .container_main .img_main img {
 }
 .contact .container_contact .box4 .button_conta {
   width: 28%;
-  height: 31px;
+  height: 32px;
   letter-spacing: 4px;
-  margin-top: 22px;
+  margin-top: 20px;
   margin-bottom: 20px;
   margin-right: -5px;
   border-radius: 0 30px 30px 0;
@@ -649,6 +675,7 @@ header .container_main .img_main img {
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 10px;
+    letter-spacing: 0;
   }
 }
 .contact .container_contact .box4 .espace {

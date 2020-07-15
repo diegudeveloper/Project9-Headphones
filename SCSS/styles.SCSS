@@ -4,6 +4,7 @@
 @import "components/hero";
 @import "components/about";
 @import "components/galey";
+@import "components/footer";
 
 
 .contact {
@@ -66,10 +67,11 @@
             .input {
                 display: block;
                 width: 70%;
-                height: 31px;
-                margin-top: 20px;
+                height: 35px;
+                margin-top: 18px;
                 margin-bottom: 20px;
                 border-radius: 30px 0 0 30px;
+                border: 0;
                 text-align: center;
                 font-size: 18px;
                 background-color: #333;
@@ -82,9 +84,9 @@
             }
             .button_conta {
                 width: 28%;
-                height: 31px;
+                height: 32px;
                 letter-spacing: 4px;
-                margin-top: 22px;
+                margin-top: 20px;
                 margin-bottom: 20px;
                 margin-right: -5px;
                 border-radius: 0 30px 30px 0;
@@ -93,6 +95,7 @@
                     font-size: 14px;
                     margin-top: 10px;
                     margin-bottom: 10px;
+                    letter-spacing: 0;
                 }
             }
             .espace {
