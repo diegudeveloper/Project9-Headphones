@@ -10,7 +10,7 @@ Solo debes ingresar al siguiente link para ver el Proyecto: [Proyecto 9](https:/
 ## 👨🏻‍💻 Tecnologías
 1. Html
 2. Css
-3. SCSS
+3. Sass
 4. Prepos
 
 ## 📈 Avance
